@@ -25,6 +25,7 @@ public class TestSearch {
 	@When("Go to website tokopedia")
 	public void go_to_website_tokopedia() {
 		driver.get(Constants.URL_ONE);
+		HooksSearch.delay(5);
 		extentTest.log(LogStatus.PASS, "Go to website tokopedia");
 	}
 	
